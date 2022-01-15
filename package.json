@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.5",
+    "@dustingetz/react-json-editor": "^0.3.0",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@material-ui/core": "^5.0.0-beta.2",
@@ -18,6 +19,11 @@
     "axios": "^0.24.0",
     "formik": "^2.2.9",
     "framer-motion": "^4",
+    "ioredis": "^4.28.3",
+    "jsoneditor": "^9.5.11",
+    "jsoneditor-react": "^3.1.2",
+    "mongodb": "^4.3.0",
+    "mongoose": "^6.1.6",
     "next": "12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -25,13 +31,16 @@
     "react-json-view": "^1.21.3",
     "react-quill": "^1.3.5",
     "react-select": "^5.2.1",
+    "redis": "^4.0.1",
     "sass": "^1.37.5",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@types/react": "17.0.15",
     "@types/react-tap-event-plugin": "^0.0.31",
+    "@types/redis": "^4.0.11",
     "@types/styled-components": "^5.1.11",
+    "@zeit/next-sass": "^1.0.1",
     "eslint": "7.31.0",
     "eslint-config-next": "11.0.1",
     "typescript": "4.3.5"
