@@ -21,9 +21,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
       const result: any = await Promise.all(
         data.product_ids.map(async (product_id: Number) => await axiosInstance.get('wp-json/wc/v3/products/' + product_id))
       );
+      //filter data.data
       const finalResult = result.map((last: any) => last.data);
 
-      res.status(200).json({ name: 'POST', data: { name: data.title, products: finalResult } });
+      res.status(200).json({
+        name: 'POST',
+        data: { name: data?.title, icon: data?.icon, category_id: data?.category_id, products: finalResult },
+      });
 
       break;
 

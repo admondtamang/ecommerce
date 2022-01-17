@@ -1178,7 +1178,7 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.0.6.tgz#023d72a5c4531b4ce204528971700a78a85a0c50"
   integrity sha512-Myxw//kzromB9yWgS8qYGuGVf91oBUUJpNvy5eM50sqvmKLbKjwLxohJnkWGTeeI9v9IBMtPLxz5Gc60FIfvCA==
 
-"@sphinxxxx/color-conversion@^2.2.2":
+"@sphinxxxx/color-conversion@^2.2.1", "@sphinxxxx/color-conversion@^2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@sphinxxxx/color-conversion/-/color-conversion-2.2.2.tgz#03ecc29279e3c0c832f6185a5bfa3497858ac8ca"
   integrity sha512-XExJS3cLqgrmNBIP3bBw6+1oQ1ksGjFh0+oClDKFYpCCqx/hlqwWO5KO/S63fzUo67SxI9dMrF0y5T/Ey7h8Zw==
@@ -1422,6 +1422,16 @@ ajv-keywords@^3.1.0:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-3.5.2.tgz#31f29da5ab6e00d1c2d329acf7b5929614d5014d"
   integrity sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==
+
+ajv@6.10.2:
+  version "6.10.2"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.10.2.tgz#d3cea04d6b017b2894ad69040fec8b623eb4bd52"
+  integrity sha512-TXtUUEYHuaTEbLZWIKUr5pmBuhDLy+8KYtPYdcV8qC+pOZL+NKqYwvWSRrVXHn+ZmRRAu8vJTAznH7Oag6RVRw==
+  dependencies:
+    fast-deep-equal "^2.0.1"
+    fast-json-stable-stringify "^2.0.0"
+    json-schema-traverse "^0.4.1"
+    uri-js "^4.2.2"
 
 ajv@^6.1.0, ajv@^6.10.0, ajv@^6.12.4, ajv@^6.12.6:
   version "6.12.6"
@@ -1723,6 +1733,11 @@ brace-expansion@^1.1.7:
   dependencies:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
+
+brace@0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/brace/-/brace-0.11.1.tgz#4896fcc9d544eef45f4bb7660db320d3b379fe58"
+  integrity sha1-SJb8ydVE7vRfS7dmDbMg07N5/lg=
 
 braces@^3.0.1, braces@~3.0.2:
   version "3.0.2"
@@ -2796,6 +2811,11 @@ extracted-loader@1.0.4:
   resolved "https://registry.yarnpkg.com/extracted-loader/-/extracted-loader-1.0.4.tgz#e1a3f1791813c14091a1959e261e23e95dd90115"
   integrity sha512-G8A0hT/WCWIjesZm7BwbWdST5dQ08GNnCpTrJT/k/FYzuiJwlV1gyWjnuoizOzAR4jpEYXG2J++JyEKN/EB26Q==
 
+fast-deep-equal@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
+  integrity sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
+
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
@@ -3514,7 +3534,7 @@ isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
-javascript-natural-sort@^0.7.1:
+javascript-natural-sort@0.7.1, javascript-natural-sort@^0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/javascript-natural-sort/-/javascript-natural-sort-0.7.1.tgz#f9e2303d4507f6d74355a73664d1440fb5a0ef59"
   integrity sha1-+eIwPUUH9tdDVac2ZNFED7Wg71k=
@@ -3528,7 +3548,7 @@ jest-worker@27.0.0-next.5:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jmespath@^0.15.0:
+jmespath@0.15.0, jmespath@^0.15.0:
   version "0.15.0"
   resolved "https://registry.yarnpkg.com/jmespath/-/jmespath-0.15.0.tgz#a3f222a9aae9f966f5d27c796510e28091764217"
   integrity sha1-o/Iiqarp+Wb10nx5ZRDigJF2Qhc=
@@ -3576,7 +3596,7 @@ json-schema-traverse@^1.0.0:
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz#ae7bcb3656ab77a73ba5c49bf654f38e6b6860e2"
   integrity sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==
 
-json-source-map@^0.6.1:
+json-source-map@0.6.1, json-source-map@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/json-source-map/-/json-source-map-0.6.1.tgz#e0b1f6f4ce13a9ad57e2ae165a24d06e62c79a0f"
   integrity sha512-1QoztHPsMQqhDq0hlXY5ZqcEdUzxQEIxgFkKl4WUp2pgShObl+9ovi4kRh2TfvAfxAoHOJ9vIMEqk3k4iex7tg==
@@ -3600,6 +3620,13 @@ json5@^2.2.0:
   dependencies:
     minimist "^1.2.5"
 
+jsoneditor-react-ext@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/jsoneditor-react-ext/-/jsoneditor-react-ext-1.0.1.tgz#016241969f7567de77ace686ada72e7116bc0fc1"
+  integrity sha512-NU3HwqFe/x9gLCe/TTUEQR1rj4eZMZDVSlt16A53mKsRRiYJnUAN8blE6avYb/a5PiiUDWGdmp7XBBYVLS5r9A==
+  dependencies:
+    prop-types "^15.7.2"
+
 jsoneditor-react@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/jsoneditor-react/-/jsoneditor-react-3.1.2.tgz#bc36356ac5ecb0d8f88d49a5ccbeecdd7f996164"
@@ -3607,10 +3634,24 @@ jsoneditor-react@^3.1.2:
   dependencies:
     prop-types "^15.7.2"
 
-jsoneditor@^9.5.11:
-  version "9.5.11"
-  resolved "https://registry.yarnpkg.com/jsoneditor/-/jsoneditor-9.5.11.tgz#6e5d7c13fb4fa8b7ac01404c7b5a01afe3035570"
-  integrity sha512-CrR2DH0CD0VtaPwNrfMyGI/3kGTzG1Czl7cwDYjk2Fad7EA2k1tUFW2O4KdFt2qwbFaGrm8kPkTIrgNuntp0tA==
+jsoneditor@^6.3.0:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/jsoneditor/-/jsoneditor-6.4.1.tgz#0f0b2fb165a0c171e58b6d02de87ced27aeb51d0"
+  integrity sha512-7CqAArWS3tWF15JsRLeq8PWZq8jQ6Ycg2QDVi6YtqaURPf1UnxpfycI0EojClQrRxCULTOiprFSfJMpQkbquBQ==
+  dependencies:
+    ajv "6.10.2"
+    brace "0.11.1"
+    javascript-natural-sort "0.7.1"
+    jmespath "0.15.0"
+    json-source-map "0.6.1"
+    mobius1-selectr "2.4.13"
+    picomodal "3.0.0"
+    vanilla-picker "2.9.2"
+
+jsoneditor@^9.6.0:
+  version "9.6.0"
+  resolved "https://registry.yarnpkg.com/jsoneditor/-/jsoneditor-9.6.0.tgz#2b9e900c86bd600a4daa078a8f17c3929bb4b4d0"
+  integrity sha512-f4knxO5KtnxzYzUiU6HbrTv2ilMjHBpYG8udyRxdHjNBZbSpNSzZGSK8Jyis8HHGrVUsKzA8iqmCnvNgWvADRA==
   dependencies:
     ace-builds "^1.4.13"
     ajv "^6.12.6"
@@ -3930,7 +3971,7 @@ mkdirp@^0.5.0:
   dependencies:
     minimist "^1.2.5"
 
-mobius1-selectr@^2.4.13:
+mobius1-selectr@2.4.13, mobius1-selectr@^2.4.13:
   version "2.4.13"
   resolved "https://registry.yarnpkg.com/mobius1-selectr/-/mobius1-selectr-2.4.13.tgz#0019dfd9f984840d6e40f70683ab3ec78ce3b5df"
   integrity sha512-Mk9qDrvU44UUL0EBhbAA1phfQZ7aMZPjwtL7wkpiBzGh8dETGqfsh50mWoX9EkjDlkONlErWXArHCKfoxVg0Bw==
@@ -4377,7 +4418,7 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
   integrity sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==
 
-picomodal@^3.0.0:
+picomodal@3.0.0, picomodal@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/picomodal/-/picomodal-3.0.0.tgz#facd30f4fbf34a809c1e04ea525f004f399c0b82"
   integrity sha1-+s0w9PvzSoCcHgTqUl8ATzmcC4I=
@@ -4737,6 +4778,13 @@ react-json-view@^1.21.3:
     react-base16-styling "^0.6.0"
     react-lifecycles-compat "^3.0.4"
     react-textarea-autosize "^8.3.2"
+
+react-jsoneditor-wrapper@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-jsoneditor-wrapper/-/react-jsoneditor-wrapper-1.0.3.tgz#9539457dfd59fe1f971d0c4a510c1e9070a7ee6c"
+  integrity sha512-XeHzxNeviX6WEfhyqsx37xFkUQgnKC8gNZFtJrErzuMX3G6GAF7X9kV1OuS2OR1Z/spRy789UsFwadKujMGUBw==
+  dependencies:
+    jsoneditor "^6.3.0"
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
@@ -5693,6 +5741,13 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+vanilla-picker@2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/vanilla-picker/-/vanilla-picker-2.9.2.tgz#d9a7213d2a5c6f6136374dceb9d3e27086854e0e"
+  integrity sha512-/VvbdCFno9jhOsqK8IVj7Jg6Cst5jeRdP9OWJo5H8R6s34mx/rTZFViucvUWyunbSML97C9SuIGZkRWEWjm3zg==
+  dependencies:
+    "@sphinxxxx/color-conversion" "^2.2.1"
 
 vanilla-picker@^2.12.1:
   version "2.12.1"

@@ -2,6 +2,7 @@ import React from 'react';
 import InputField from '../FormComponents/InputField';
 import PriceField from '../FormComponents/PriceField';
 import TagsInput from '../FormComponents/ReactSelect';
+import TextAreaField from '../FormComponents/TextAreaField';
 
 export default function CustomFields({ fields }: any) {
   function handleField(field: any, index: Number) {
@@ -9,6 +10,16 @@ export default function CustomFields({ fields }: any) {
       case 'InputField':
         return (
           <InputField
+            name={field.name}
+            label={field.name}
+            placeholder={field.placeholder}
+            isRequired={field.placeholder}
+            key={field.index}
+          />
+        );
+      case 'TextAreaField':
+        return (
+          <TextAreaField
             name={field.name}
             label={field.name}
             placeholder={field.placeholder}
