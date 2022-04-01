@@ -1,3 +1,4 @@
+import InputTypes from '@/constants/InputTypes';
 import React from 'react';
 import InputField from '../FormComponents/InputField';
 import PriceField from '../FormComponents/PriceField';
@@ -7,7 +8,7 @@ import TextAreaField from '../FormComponents/TextAreaField';
 export default function CustomFields({ fields }: any) {
   function handleField(field: any, index: Number) {
     switch (field.type) {
-      case 'InputField':
+      case InputTypes.InputField:
         return (
           <InputField
             name={field.name}
@@ -17,7 +18,7 @@ export default function CustomFields({ fields }: any) {
             key={field.index}
           />
         );
-      case 'TextAreaField':
+      case InputTypes.TextAreaField:
         return (
           <TextAreaField
             name={field.name}
@@ -27,7 +28,7 @@ export default function CustomFields({ fields }: any) {
             key={field.index}
           />
         );
-      case 'PriceField':
+      case InputTypes.PriceField:
         return (
           <PriceField
             name={field.name}
@@ -37,7 +38,7 @@ export default function CustomFields({ fields }: any) {
             key={field.index}
           />
         );
-      case 'TagsInput':
+      case InputTypes.TagsInput:
         return (
           <TagsInput
             key={field.index}

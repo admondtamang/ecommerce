@@ -5,6 +5,7 @@ import Sidebar from '../components/Sidebar';
 import styles from '../styles/Home.module.css';
 import Home from './Home';
 import JsonFeeder from './JsonFeeder';
+import ProductCreateEdit from './Products/AddEditPage';
 export default function index() {
   return (
     <div>
@@ -15,7 +16,7 @@ export default function index() {
       </Head>
 
       <Sidebar>
-        <JsonFeeder />
+        <ProductCreateEdit />
       </Sidebar>
     </div>
   );
